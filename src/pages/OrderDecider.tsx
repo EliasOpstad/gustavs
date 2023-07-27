@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import logo from '../CommonComponents/logo.png';
-
+// import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 
 // interface List{
@@ -25,13 +26,13 @@ const Container = styled.div`
 const ContainerRow = styled.div`
   margin: auto;
   justify-content: space-around;
-  align
 `;
 
 const Logo = styled.img`
     width: 50%;
     margin: auto;
 `;
+
 const TextContainer = styled.div`
 
 `;
@@ -48,9 +49,13 @@ const ButtonContainerRow = styled.div`
     margin: auto;
 
 `;
-export const ReferencingContent = () =>{
+export const OrderDecider = () =>{
   const [count, setCount] = useState<number>(0);
-  
+  // const [date, setDate] = useState(new Date());
+
+  // const onChange(nextValue){
+  //   setDate(nextValue);
+  // }
   const handleIncrement = () => {
     if (count < 10) {
       setCount(prevCount => prevCount + 1);
@@ -113,12 +118,13 @@ export const ReferencingContent = () =>{
               - Relasjonsdatabase.
               - Prisma hente ut data.
 
-              - Datpicker (https://www.npmjs.com/package/react-calendar)
+              - Datepicker (https://www.npmjs.com/package/react-calendar)
             
             */}
 
 
               <p>HER SKAL DET VÆRE EN KALLENDER</p>
+              {/* <Calendar onChange={onChange} value={value}/> */}
               <NesteSide><button onClick={incrementPart} disabled={count === 0}>Neste</button></NesteSide>
               <NesteSide><button onClick={decresePart} disabled={count === 0}>Tilbake</button></NesteSide>
 

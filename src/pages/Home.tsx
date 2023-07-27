@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../CommonComponents/logo.png';
 import styled from 'styled-components';
+import { ImageRow } from '../CommonComponents/ImageRow';
 
 
 const HomeContainer = styled.div`
@@ -50,9 +51,7 @@ const HomePage = () => {
         anged. It was popularised in the 1960s with the release of Letraset sheet
         s containing Lorem Ipsum passages, and </PContainer>
       </TextContainer>
-    <ImageGallary>
-
-    </ImageGallary>
+    <ImageRow/>
     </HomeContainer>
     </>
   );

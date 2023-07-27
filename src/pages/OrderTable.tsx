@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { ReferencingContent } from './OrderDecider';
+import { OrderDecider } from './OrderDecider';
 
 
 export const OrderTable = ()=> {
   return (
           <div>
-            <ReferencingContent/>
+            <OrderDecider/>
         </div>
   );
 };
