@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import logo from '../CommonComponents/logo.png';
 // import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
 
 
 // interface List{
@@ -51,11 +50,11 @@ const ButtonContainerRow = styled.div`
 `;
 export const OrderDecider = () =>{
   const [count, setCount] = useState<number>(0);
-  // const [date, setDate] = useState(new Date());
+  // example for today's labels and invalids
 
-  // const onChange(nextValue){
-  //   setDate(nextValue);
-  // }
+  
+
+
   const handleIncrement = () => {
     if (count < 10) {
       setCount(prevCount => prevCount + 1);
