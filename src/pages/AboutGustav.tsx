@@ -1,20 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../CommonComponents/logo.png";
-import { ImageRow } from "../CommonComponents/ImageRow";
-import { Column } from "../styles/Style-helper";
+import Gustav from "../Images/Gustav-Helland.png";
+import huset from "../Images/Huset.png";
 import Workers from "../CommonComponents/Workers";
 
 const HomeContainer = styled.div`
   display: grid;
   margin: auto;
+  /* background-color: #1b1b1b;
+  color: white; */
+
+  color: black;
+  padding-bottom: 100px;
 `;
-const Logo = styled.img`
+const Bilde = styled.img`
   object-fit: cover;
+  object-position: 0;
   width: 80%;
   margin: auto;
-  height: 300px;
+  height: 500px;
   margin-top: 80px;
+`;
+const LeftContainer = styled.div`
+  margin-right: 10%;
+  line-height: 1.6;
 `;
 const ImageRightContainer = styled.img`
   height: 300px;
@@ -28,16 +37,16 @@ const ContentContainer = styled.div`
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 200px;
+
+  padding-top: 50px;
 `;
 const Text = styled.p``;
-const LeftContainer = styled.div``;
-const RightContainer = styled.div``;
+
 export const AboutGustav = () => {
   return (
     <>
       <HomeContainer>
-        <Logo src={logo} />
+        <Bilde src={huset} />
         <ContentContainer>
           <LeftContainer>
             <Headline>Gustavs Restaurant</Headline>
@@ -52,9 +61,8 @@ export const AboutGustav = () => {
               viktige bidrag til arkitekturen i området.
             </Text>
           </LeftContainer>
-          <RightContainer>
-            <ImageRightContainer src={logo} />
-          </RightContainer>
+
+          <ImageRightContainer src={Gustav} />
         </ContentContainer>
         <Workers />
       </HomeContainer>

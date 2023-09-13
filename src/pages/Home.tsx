@@ -1,16 +1,19 @@
 import React from "react";
-import logo from "../CommonComponents/logo.png";
+import tapas from "../Images/Tapas-Brett.jpg";
 import styled from "styled-components";
 import { ImageRow } from "../CommonComponents/ImageRow";
 import { Column } from "../styles/Style-helper";
+import Line from "../CommonComponents/Line";
 
 const HomeContainer = styled.div`
   display: grid;
 
   margin: auto;
 `;
-const Logo = styled.img`
+const Tapas = styled.img`
   width: 100%;
+  height: 600px;
+  object-fit: cover;
 `;
 
 const Headline = styled.div`
@@ -34,10 +37,10 @@ const HomePage = () => {
   return (
     <>
       <HomeContainer>
-        <Logo src={logo} />
+        <Tapas src={tapas} />
         <TextContainer>
           <Headline>
-            <h1>Gustavs Restaurant</h1>
+            <h1>Gustav's Vinbar & Tapas </h1>
           </Headline>
           <PContainer>
             Lorem Ipsum is simply dummy text of the print ing and typesetting
@@ -47,9 +50,10 @@ const HomePage = () => {
             only five centuries, but also the leap into electronic typesetting,
             remaining essentially unch anged. It was popularised in the 1960s
             with the release of Letraset sheet s containing Lorem Ipsum
-            passages, and{" "}
+            passages, and more recently with desktop publishing software like.
           </PContainer>
         </TextContainer>
+        <Line />
         <ImageRow />
       </HomeContainer>
     </>

@@ -10,7 +10,6 @@ const Container = styled.div`
   height: 500px;
   width: 100%;
   background-color: #414042;
-  margin-top: 100px;
   position: relative;
 `;
 const TextContainer = styled(Row)`
@@ -18,7 +17,7 @@ const TextContainer = styled(Row)`
   color: white;
   margin-left: 10%;
   justify-content: flex-start;
-  gap: 300px;
+  gap: 250px;
   padding-top: 40px;
 `;
 const GustavInformation = styled(Column)``;
@@ -29,7 +28,6 @@ const FooterCredits = styled.div`
   height: 60px;
   width: 100%;
   background-color: #303030;
-
   position: absolute;
   bottom: 0;
 `;

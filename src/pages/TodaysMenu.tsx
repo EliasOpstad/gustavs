@@ -1,13 +1,9 @@
-
-import React from 'react';
-
+import React from "react";
 
 export const TodaysMenu = () => {
   return (
     <>
-    <p>TodaysMenu</p><p>sdjshdksjd</p>
+      <p>Ingenting her</p>
     </>
   );
-}
-
-
+};

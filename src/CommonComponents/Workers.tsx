@@ -1,10 +1,11 @@
 import React from "react";
-import picture from "../CommonComponents/exampleImage.png";
+import picture from "../Images/exampleImage.png";
 import styled from "styled-components";
 import { Column, Row } from "../styles/Style-helper";
 const Container = styled.div`
   width: 80%;
   margin: auto;
+  margin-top: 50px;
 `;
 
 const Image = styled.img`

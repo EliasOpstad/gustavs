@@ -1,15 +1,10 @@
+import React from "react";
+import { OrderDecider } from "./OrderDecider";
 
-import React from 'react';
-import { OrderDecider } from './OrderDecider';
-
-
-export const OrderTable = ()=> {
+export const OrderTable = () => {
   return (
-          <div>
-            <OrderDecider/>
-        </div>
+    <div>
+      <OrderDecider />
+    </div>
   );
 };
-
-
-

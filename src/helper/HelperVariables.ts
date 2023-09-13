@@ -7,3 +7,5 @@ export const OPENING_HOURS_KITCHEN = "Kjøkkenet stenger 21:30";
 export const OPENING_HOURS_KITCHEN_WEEKEND = "Kjøkkenet stenger 21:30";
 export const OPENING_HOURS_BAR = "Baren stenger 22:00";
 export const OPENING_HOURS_BAR_WEEKEND = "Baren stenger 22:00";
+
+export const PRIMIRARY_COLOR = "#F2EFE9";
