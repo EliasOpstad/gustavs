@@ -4,7 +4,7 @@ export const FB_LINK =
   "https://www.facebook.com/profile.php?id=100095026144226";
 
 export const ADDRESS = "Gustav Vigelandsgate 32, 0264 Oslo";
-export const PHONE = "+4792888827";
+export const PHONE = "+47 92 88 88 27";
 export const EMAIL = "info@gustav.no";
 
 // Åpningstider onsdag - lørdag
