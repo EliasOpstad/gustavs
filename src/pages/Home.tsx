@@ -1,19 +1,23 @@
 import React from "react";
-import tapas from "../Images/Tapas-Brett.jpg";
+import tapas from "../Images/forside-plankeBilde.jpg";
 import styled from "styled-components";
 import { ImageRow } from "../CommonComponents/ImageRow";
 import { Column } from "../styles/Style-helper";
 import Line from "../CommonComponents/Line";
 
 const HomeContainer = styled.div`
-  display: grid;
-
   margin: auto;
 `;
 const Tapas = styled.img`
   width: 100%;
   height: 600px;
   object-fit: cover;
+  object-position: 0;
+  @media only screen and (max-width: 1024px) {
+    Tapas {
+      height: 300px;
+    }
+  }
 `;
 
 const Headline = styled.div`
@@ -31,6 +35,8 @@ const TextContainer = styled(Column)`
 const PContainer = styled.div`
   width: 80%;
   margin: auto;
+  text-align: center;
+  font-size: 40px;
 `;
 
 const HomePage = () => {
@@ -43,14 +49,9 @@ const HomePage = () => {
             <h1>Gustav's Vinbar & Tapas </h1>
           </Headline>
           <PContainer>
-            Lorem Ipsum is simply dummy text of the print ing and typesetting
-            industry. Lorem Ipsum has been the industry's s tandard dummy text
-            ever since the 1500s, when an unknown printer took a ga lley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unch anged. It was popularised in the 1960s
-            with the release of Letraset sheet s containing Lorem Ipsum
-            passages, and more recently with desktop publishing software like.
+            Del et måltid med dine gode venner. Gustavs anbefaler Planke med
+            nydelige skinker og oster. Sammen med noe godt i glasset blir dette
+            en hyggelig opplevelse
           </PContainer>
         </TextContainer>
         <Line />

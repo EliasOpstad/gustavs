@@ -17,7 +17,6 @@ const TextContainer = styled(Row)`
   color: white;
   margin-left: 10%;
   justify-content: flex-start;
-  gap: 250px;
   padding-top: 40px;
 `;
 const GustavInformation = styled(Column)``;
@@ -40,7 +39,7 @@ const CodeCreds = styled.div`
   color: white;
   margin-left: 10%;
   justify-content: flex-start;
-  gap: 300px;
+
   padding-top: 20px;
 `;
 const Info = styled(Row)`

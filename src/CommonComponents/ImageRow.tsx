@@ -24,6 +24,9 @@ const ImageGallary = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
   padding-bottom: 100px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 const Title = styled.h2``;
 const Description = styled.p`
