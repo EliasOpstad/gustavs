@@ -46,6 +46,6 @@ export const FONT_SIZE_XXXLARGE = "5rem";
 
 //Breakpoints
 export const BREAKPOINT_SMALL = "540px";
-export const BREAKPOINT_MEDIUM = "768px";
+export const BREAKPOINT_MEDIUM = "775px";
 export const BREAKPOINT_LARGE = "1200px";
 export const BREAKPOINT_XLARGE = "1800px";
