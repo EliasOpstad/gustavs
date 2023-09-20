@@ -3,9 +3,9 @@ export const NAVN = "Gustav's Tapas og Vinbar";
 export const FB_LINK =
   "https://www.facebook.com/profile.php?id=100095026144226";
 
-export const ADDRESS = "Gustav Vigelandsgate 32, 0264 Oslo";
-export const PHONE = "+47 92 88 88 27";
-export const EMAIL = "info@gustav.no";
+export const ADDRESS = "Eiganesveien 8, 4008 Stavanger";
+export const PHONE = "+47 92 94 40 22";
+export const EMAIL = "jarle@gustavs.no";
 
 // Åpningstider Gustavs
 
