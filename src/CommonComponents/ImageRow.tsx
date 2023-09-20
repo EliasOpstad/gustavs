@@ -4,6 +4,7 @@ import blaa from "../Images/Blaaskjell.jpg";
 import GustavBilde from "../Images/Gustav-Helland.png";
 import bestillBord from "../Images/Bord-hoyre-close.jpg";
 import styled from "styled-components";
+import { PHONE, EMAIL } from "../helper/HelperVariables";
 
 const Bilde = styled.img`
   width: 100%;
@@ -43,24 +44,25 @@ export const ImageRow = () => {
           <Bilde src={bestillBord} />
           <Title>Bestill Bord</Title>
           <Description>
-            Tapas med mye spennede både full planke og småretter. Link til
-            åpningstider og meny
+            <p>
+              Ring: {PHONE} <br />
+              Email: {EMAIL}
+            </p>
           </Description>
         </Element>
         <Element>
           <Bilde src={skampi} />
           <Title>Varer av høy klasse</Title>
           <Description>
-            Tapas med mye spennede både full planke og småretter. Link til
-            åpningstider og meny
+            Råvarer av høy kvalitet. Vi bruker lokale leverandører og kortreiste
+            produkter når det er mulig
           </Description>
         </Element>
         <Element>
           <Bilde src={blaa} />
           <Title>Ferske ingredienser</Title>
           <Description>
-            Tapas med mye spennede både full planke og småretter. Link til
-            åpningstider og meny
+            Vi har et utvalg av ulik småretter som supplerer din planke.
           </Description>
         </Element>
         <Element>

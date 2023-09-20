@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Column, Row } from "../styles/Style-helper";
-import { FOOTER_BACKGROUND_COLOR } from "../helper/HelperVariables";
+
 import {
   ADDRESS,
   EMAIL,
@@ -39,7 +39,7 @@ const FooterCredits = styled.div`
 `;
 const Header = styled.h4``;
 const Kontakt = styled.div`
-  line-height: 0.5;
+  line-height: 1.5;
 `;
 const CodeCreds = styled.div`
   width: 80%;
@@ -64,10 +64,12 @@ const Footer = () => {
       <TextContainer>
         <GustavInformation>
           <FooterTitle>GUSTAVS</FooterTitle>
-          <p>{ADDRESS}</p>
+          {ADDRESS}
           <Kontakt>
-            <p>E-post: {EMAIL}</p>
-            <p>Telefon: {PHONE}</p>
+            <p>
+              E-post: {EMAIL} <br />
+              Telefon: {PHONE}
+            </p>
           </Kontakt>
           <button>Bestill bord</button>
         </GustavInformation>

@@ -64,7 +64,6 @@ export const AboutGustav = () => {
 
           <ImageRightContainer src={Gustav} />
         </ContentContainer>
-        <Workers />
       </HomeContainer>
     </>
   );
