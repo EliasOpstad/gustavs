@@ -17,6 +17,9 @@ const Container = styled.div`
   width: 100%;
   background-color: #b257ad58;
   position: relative;
+  @media (max-width: 768px) {
+    height: 600px;
+  }
 `;
 const TextContainer = styled(Row)`
   width: 80%;
@@ -25,6 +28,12 @@ const TextContainer = styled(Row)`
   justify-content: flex-start;
   gap: 100px;
   padding-top: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0px;
+    padding-top: 10px;
+  }
 `;
 const GustavInformation = styled(Column)``;
 const FooterTitle = styled.h3``;

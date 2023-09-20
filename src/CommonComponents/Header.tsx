@@ -3,7 +3,12 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { PATH_HOME } from "../RouterFolder/Routes";
 import HamburgerMenu from "./Nav/HamburgerMenu";
-import { BLACK_COLOR, LOGO } from "../helper/HelperVariables";
+import {
+  BLACK_COLOR,
+  BREAKPOINT_MEDIUM,
+  BREAKPOINT_SMALL,
+  LOGO,
+} from "../helper/HelperVariables";
 import logo from "../Images/logo.png";
 import logoBlack from "../Images/svart-logo.png";
 const HeaderContainer = styled.div`
@@ -15,10 +20,13 @@ const HeaderContainer = styled.div`
 
 const Logo = styled.img`
   margin-left: 10%;
-  height: 100px !important;
+  height: 100px;
   width: auto;
-  @media screen and (max-width(800px)) {
-    width: 20%;
+  @media (max-width: ${BREAKPOINT_MEDIUM}) {
+    height: 60px;
+  }
+  @media (max-width: ${BREAKPOINT_SMALL}) {
+    display: none;
   }
 `;
 
