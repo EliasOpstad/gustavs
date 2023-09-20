@@ -7,11 +7,17 @@ import { EMAIL, PHONE } from "../helper/HelperVariables";
 
 const Container = styled(Column)`
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: auto;
   justify-content: center;
   text-align: center;
 `;
+
+const Content = styled.div`
+  width: 80%;
+  margin: auto;
+`;
+
 const Menu = styled.img`
   border: 1px solid black;
   width: 80%;
@@ -22,12 +28,14 @@ const Menu = styled.img`
 export const OrderTable = () => {
   return (
     <Container>
-      <h1>Ønsker du å bestille bord hos Gustav's?</h1>
-      <p>Ring: {PHONE}</p>
-      <p>Email: {EMAIL}</p>
-      <h1>Menu</h1>
-      <Menu src={menu1} />
-      <Menu src={menu2} />
+      <Content>
+        <h1>Ønsker du å bestille bord hos Gustav's?</h1>
+        <p>Ring: {PHONE}</p>
+        <p>Email: {EMAIL}</p>
+        <h1>Menu</h1>
+        <Menu src={menu1} />
+        <Menu src={menu2} />
+      </Content>
     </Container>
   );
 };

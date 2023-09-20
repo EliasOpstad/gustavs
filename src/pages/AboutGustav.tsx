@@ -7,7 +7,7 @@ import Workers from "../CommonComponents/Workers";
 const HomeContainer = styled.div`
   display: grid;
   margin: auto;
-  /* background-color: #1b1b1b;
+  /* background-color: #191616;
   color: white; */
 
   color: black;

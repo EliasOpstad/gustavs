@@ -1,20 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import { Column, Row } from "../styles/Style-helper";
+import { FOOTER_BACKGROUND_COLOR } from "../helper/HelperVariables";
 import {
+  ADDRESS,
+  EMAIL,
   OPENING_HOURS,
   OPENING_HOURS_KITCHEN,
+  OPENING_HOURS_KITCHEN_WEEKEND,
+  OPENING_HOURS_WEEKEND,
+  PHONE,
 } from "../helper/HelperVariables";
 
 const Container = styled.div`
   height: 500px;
   width: 100%;
-  background-color: #414042;
+  background-color: #b257ad58;
   position: relative;
 `;
 const TextContainer = styled(Row)`
   width: 80%;
-  color: white;
+  color: black;
   margin-left: 10%;
   justify-content: flex-start;
   gap: 100px;
@@ -58,10 +64,10 @@ const Footer = () => {
       <TextContainer>
         <GustavInformation>
           <FooterTitle>GUSTAVS</FooterTitle>
-          <p>Adresse 18, Stavanger</p>
+          <p>{ADDRESS}</p>
           <Kontakt>
-            <p>E-post: gustav@info.no</p>
-            <p>Telefon: 47 47 47 47</p>
+            <p>E-post: {EMAIL}</p>
+            <p>Telefon: {PHONE}</p>
           </Kontakt>
           <button>Bestill bord</button>
         </GustavInformation>
@@ -72,6 +78,11 @@ const Footer = () => {
             {OPENING_HOURS}
             <br />
             {OPENING_HOURS_KITCHEN}
+          </p>
+          <p>
+            {OPENING_HOURS_WEEKEND}
+            <br />
+            {OPENING_HOURS_KITCHEN_WEEKEND}
           </p>
         </OpeningHours>
         <FollowUs>

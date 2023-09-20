@@ -4,9 +4,12 @@ import styled from "styled-components";
 import { ImageRow } from "../CommonComponents/ImageRow";
 import { Column } from "../styles/Style-helper";
 import Line from "../CommonComponents/Line";
+import { BLACK_COLOR, WHITE_COLOR } from "../helper/HelperVariables";
 
 const HomeContainer = styled.div`
   margin: auto;
+  background-color: ${BLACK_COLOR};
+  color: ${WHITE_COLOR};
 `;
 const Tapas = styled.img`
   width: 100%;
@@ -14,9 +17,7 @@ const Tapas = styled.img`
   object-fit: cover;
   object-position: 0;
   @media only screen and (max-width: 1024px) {
-    Tapas {
-      height: 300px;
-    }
+    height: 300px;
   }
 `;
 

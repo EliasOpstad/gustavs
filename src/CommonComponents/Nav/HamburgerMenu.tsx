@@ -13,6 +13,7 @@ const ButtonLink = styled.div`
   text-decoration: none;
   margin: 10px;
   padding: 10px;
+  color: white;
 `;
 const RightHeader = styled.div`
   display: flex;
@@ -28,11 +29,11 @@ const HamburgerMenu: React.FC = () => {
   const navigate = useNavigate();
   return (
     <RightHeader>
-      <ButtonLink onClick={() => navigate(PATH_HOME)}>Hjem</ButtonLink>
+      <ButtonLink onClick={() => navigate(PATH_HOME)}>HJEM</ButtonLink>
       <ButtonLink onClick={() => navigate(PATH_ORDERTABLE)}>
-        Bestill Bord
+        BESTILL BORD
       </ButtonLink>
-      <ButtonLink onClick={() => navigate(PATH_ABOUTGUSTAV)}>Om oss</ButtonLink>
+      <ButtonLink onClick={() => navigate(PATH_ABOUTGUSTAV)}>OM OSS</ButtonLink>
     </RightHeader>
   );
 };

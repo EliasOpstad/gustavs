@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../Images/logo.png";
 import { useNavigate } from "react-router-dom";
 import { PATH_HOME } from "../RouterFolder/Routes";
 import HamburgerMenu from "./Nav/HamburgerMenu";
-
+import { BLACK_COLOR, LOGO } from "../helper/HelperVariables";
+import logo from "../Images/logo.png";
+import logoBlack from "../Images/svart-logo.png";
 const HeaderContainer = styled.div`
   display: flex;
   height: 120px;
-  background-color: white;
+  background-color: #1b1b1b;
   align-items: center;
 `;
 
@@ -27,7 +28,7 @@ export const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <Logo src={logo} onClick={() => navigate(PATH_HOME)} />
+        <Logo src={logoBlack} onClick={() => navigate(PATH_HOME)} />
         <HamburgerMenu />
       </HeaderContainer>
     </>

@@ -7,15 +7,45 @@ export const ADDRESS = "Gustav Vigelandsgate 32, 0264 Oslo";
 export const PHONE = "+47 92 88 88 27";
 export const EMAIL = "info@gustav.no";
 
+// Åpningstider Gustavs
+
 // Åpningstider onsdag - lørdag
 export const OPENING_HOURS = "Onsdag - Lørdag: 17:00 - 24:00";
 export const OPENING_HOURS_KITCHEN = "Kjøkkenet stenger 22:00";
-
 // Åpningstider søndag
 export const OPENING_HOURS_WEEKEND = "Søndag: 15-22";
 export const OPENING_HOURS_KITCHEN_WEEKEND = "Kjøkkenet stenger 21:00";
-
+// Baren stenger
 export const OPENING_HOURS_BAR = "Baren stenger 22:00";
 export const OPENING_HOURS_BAR_WEEKEND = "Baren stenger 22:00";
 
-export const PRIMIRARY_COLOR = "#F2EFE9";
+//Colors - Black Edition
+export const WHITE_COLOR = "#F2EFE9"; //White
+export const BLACK_COLOR = "#1b1b1b"; //Black
+export const FOOTER_BACKGROUND_COLOR = "#414042"; //Dark grey
+export const FOOTER_BACKGROUND_COLOsR = "#1d1a1a"; //Dark grey
+export const FOOTER_COLOR = "#a954a560"; //Pink Footer Color
+export const LOGO = "../Images/svart-logo.png";
+
+// export const LOGO = "/Users/eliasopstad/Documents/Gustavs/gustavs/src/Images/logo.png";
+
+// //Colors - White Edition
+// export const WHITE_COLOR = "#F2EFE9"; //White
+// export const BLACK_COLOR = "#1b1b1b"; //Black
+// export const FOOTER_BACKGROUND_COLOR = "#414042"; //Dark grey
+// export const FOOTER_BACKGROUND_COLOsR = "#1d1a1a"; //Dark grey
+// export const PINK_FOOTER_COLOR = #a954a560; //Pink Footer Color
+
+//Fonts
+export const FONT_SIZE = "1.5rem";
+export const FONT_SIZE_SMALL = "1.2rem";
+export const FONT_SIZE_LARGE = "2rem";
+export const FONT_SIZE_XLARGE = "3rem";
+export const FONT_SIZE_XXLARGE = "4rem";
+export const FONT_SIZE_XXXLARGE = "5rem";
+
+//Breakpoints
+export const BREAKPOINT_SMALL = "600px";
+export const BREAKPOINT_MEDIUM = "900px";
+export const BREAKPOINT_LARGE = "1200px";
+export const BREAKPOINT_XLARGE = "1800px";
