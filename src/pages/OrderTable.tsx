@@ -3,7 +3,7 @@ import styled from "styled-components";
 import menu1 from "../Images/Meny-1.png";
 import menu2 from "../Images/Meny-2.png";
 import { Column } from "../styles/Style-helper";
-import { EMAIL, PHONE } from "../helper/HelperVariables";
+import { BREAKPOINT_MEDIUM, EMAIL, PHONE } from "../helper/HelperVariables";
 
 const Container = styled(Column)`
   display: flex;
@@ -16,6 +16,9 @@ const Container = styled(Column)`
 const Content = styled.div`
   width: 80%;
   margin: auto;
+  @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
+    width: 100%;
+  }
 `;
 const Contacts = styled.p`
   font-size: 20px;
@@ -29,6 +32,9 @@ const Menu = styled.img`
   width: 80%;
   margin: auto;
   margin-bottom: 50px;
+  @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
+    width: 95%;
+  }
 `;
 
 export const OrderTable = () => {
