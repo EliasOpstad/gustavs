@@ -79,7 +79,7 @@ const Footer = () => {
               Telefon: {PHONE}
             </p>
           </Kontakt>
-          <button>Bestill bord</button>
+          {/* <button>Bestill bord</button> */}
         </GustavInformation>
         <OpeningHours>
           <FooterTitle>ÅPNINGSTIDER:</FooterTitle>
