@@ -52,10 +52,10 @@ export const ImageRow = () => {
         </Element>
         <Element>
           <Bilde src={blaa} />
-          <Title>Varer av høy klasse</Title>
+          <Title>Råvarer av høy kvalitet</Title>
           <Description>
-            Råvarer av høy kvalitet. Vi bruker lokale leverandører og kortreiste
-            produkter når det er mulig.
+            Vi bruker lokale leverandører og kortreiste produkter når det er
+            mulig.
           </Description>
         </Element>
         <Element>
@@ -69,7 +69,7 @@ export const ImageRow = () => {
           <Bilde src={GustavBilde} />
           <Title>Om Gustav</Title>
           <Description>
-            Hvem var Gustav Helland? Hva var hans visjon? Les mer her...
+            Hvem var Gustav Helland? Hva var hans visjon? Les mer her...(LINK)
           </Description>
         </Element>
       </ImageGallary>
