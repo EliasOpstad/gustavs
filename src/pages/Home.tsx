@@ -24,9 +24,10 @@ const Tapas = styled.img`
   width: 100%;
   height: 600px;
   object-fit: cover;
-  object-position: 0;
+  object-position: bottom -50px right 0px;
   @media only screen and (max-width: 1024px) {
     height: 300px;
+    object-position: 0;
   }
 `;
 
