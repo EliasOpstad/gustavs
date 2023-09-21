@@ -51,15 +51,15 @@ export const ImageRow = () => {
           </Description>
         </Element>
         <Element>
-          <Bilde src={skampi} />
+          <Bilde src={blaa} />
           <Title>Varer av høy klasse</Title>
           <Description>
             Råvarer av høy kvalitet. Vi bruker lokale leverandører og kortreiste
-            produkter når det er mulig
+            produkter når det er mulig.
           </Description>
         </Element>
         <Element>
-          <Bilde src={blaa} />
+          <Bilde src={skampi} />
           <Title>Ferske ingredienser</Title>
           <Description>
             Vi har et utvalg av ulik småretter som supplerer din planke.
