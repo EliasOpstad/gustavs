@@ -83,7 +83,7 @@ const Footer = () => {
         </GustavInformation>
         <OpeningHours>
           <FooterTitle>ÅPNINGSTIDER:</FooterTitle>
-          <Header>Restaurant</Header>
+          {/* <Header>Restaurant</Header> */}
           <p>
             {OPENING_HOURS}
             <br />
