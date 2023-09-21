@@ -3,14 +3,13 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { PATH_HOME } from "../RouterFolder/Routes";
 import HamburgerMenu from "./Nav/HamburgerMenu";
+import logo from "../Images/gustav-logo-white.svg";
+import pinkHouse from "../Images/pink-house.svg";
 import {
   BLACK_COLOR,
   BREAKPOINT_MEDIUM,
   BREAKPOINT_SMALL,
-  LOGO,
 } from "../helper/HelperVariables";
-import logo from "../Images/logo.png";
-import logoBlack from "../Images/svart-logo.png";
 const HeaderContainer = styled.div`
   display: flex;
   height: 120px;
@@ -18,9 +17,21 @@ const HeaderContainer = styled.div`
   align-items: center;
 `;
 
+const PinkHouse = styled.img`
+  display: none;
+  @media (max-width: ${BREAKPOINT_SMALL}) {
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+    height: 34px;
+    width: auto;
+  }
+`;
 const Logo = styled.img`
+  display: flex;
   margin-left: 10%;
-  height: 100px;
+  align-items: center;
+  height: 90px;
   width: auto;
   @media (max-width: ${BREAKPOINT_MEDIUM}) {
     height: 60px;
@@ -36,7 +47,8 @@ export const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <Logo src={logoBlack} onClick={() => navigate(PATH_HOME)} />
+        <Logo src={logo} onClick={() => navigate(PATH_HOME)} />
+        <PinkHouse src={pinkHouse} onClick={() => navigate(PATH_HOME)} />
         <HamburgerMenu />
       </HeaderContainer>
     </>

@@ -12,11 +12,11 @@ import {
   PHONE,
 } from "../helper/HelperVariables";
 
-const Container = styled.div`
+const Container = styled(Column)`
   height: 500px;
+  justify-content: space-between;
   width: 100%;
   background-color: #b257ad58;
-  position: relative;
   @media (max-width: 768px) {
     height: 600px;
   }
@@ -43,8 +43,6 @@ const FooterCredits = styled.div`
   height: 60px;
   width: 100%;
   background-color: #303030;
-  position: absolute;
-  bottom: 0;
 `;
 const Header = styled.h4``;
 const Kontakt = styled.div`
@@ -58,15 +56,16 @@ const CodeCreds = styled.div`
 
   padding-top: 20px;
 `;
-const Info = styled(Row)`
-  gap: 20px;
-  margin: auto;
-  text-align: center;
-  align-items: center;
+const Info = styled.div`
   color: grey;
-  vertical-align: middle;
+  p {
+    vertical-align: middle;
+  }
 `;
-
+//   ∏ ∏  ∏ ∏
+// ∏ ¿ ¿ ¿ ¿ ∏
+// ∏  ? ? ?  ∏
+//   ∏ ∏ ∏ ∏
 const Footer = () => {
   return (
     <Container>
@@ -104,9 +103,7 @@ const Footer = () => {
       <FooterCredits>
         <CodeCreds>
           <Info>
-            <p>Gustavs Vinbar & Tapas</p>
-            <p>|</p>
-            <p>Utviklet av Elias Opstad</p>
+            <p>Gustavs Vinbar & Tapas | Utviklet av Elias Opstad</p>
           </Info>
         </CodeCreds>
       </FooterCredits>

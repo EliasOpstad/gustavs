@@ -16,6 +16,9 @@ import {
 const ButtonLink = styled.div`
   text-decoration: none;
   color: white;
+  @media (max-width: ${BREAKPOINT_SMALL}) {
+    font-size: 14px;
+  }
 `;
 const RightHeader = styled.div`
   @media (min-width: ${BREAKPOINT_MEDIUM}) {

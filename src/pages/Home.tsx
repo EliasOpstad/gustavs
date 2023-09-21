@@ -1,10 +1,19 @@
 import React from "react";
 import tapas from "../Images/forside-plankeBilde.jpg";
+
 import styled from "styled-components";
 import { ImageRow } from "../CommonComponents/ImageRow";
 import { Column } from "../styles/Style-helper";
 import Line from "../CommonComponents/Line";
-import { BLACK_COLOR, WHITE_COLOR } from "../helper/HelperVariables";
+import {
+  BLACK_COLOR,
+  BREAKPOINT_MEDIUM,
+  BREAKPOINT_SMALL,
+  FONT_SIZE_LARGE,
+  FONT_SIZE_XLARGE,
+  NAVN,
+  WHITE_COLOR,
+} from "../helper/HelperVariables";
 
 const HomeContainer = styled.div`
   margin: auto;
@@ -25,7 +34,15 @@ const Headline = styled.div`
   margin: auto;
   align-content: center;
   h1 {
-    font-size: 50px;
+    text-align: center;
+
+    font-size: ${FONT_SIZE_XLARGE};
+    @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
+      font-size: ${FONT_SIZE_XLARGE};
+    }
+    @media screen and (max-width: ${BREAKPOINT_SMALL}) {
+      font-size: ${FONT_SIZE_LARGE};
+    }
   }
 `;
 const TextContainer = styled(Column)`
@@ -37,7 +54,14 @@ const PContainer = styled.div`
   width: 80%;
   margin: auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
+  @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: ${BREAKPOINT_SMALL}) {
+    font-size: 18px;
+    width: 90%;
+  }
 `;
 
 const HomePage = () => {
@@ -47,7 +71,7 @@ const HomePage = () => {
         <Tapas src={tapas} />
         <TextContainer>
           <Headline>
-            <h1>Gustav's Vinbar & Tapas </h1>
+            <h1>{NAVN}</h1>
           </Headline>
           <PContainer>
             Del et måltid med dine gode venner. Gustavs anbefaler Planke med

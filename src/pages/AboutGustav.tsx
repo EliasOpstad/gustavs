@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Gustav from "../Images/Gustav-Helland.png";
 import huset from "../Images/Huset.png";
 import Workers from "../CommonComponents/Workers";
+import { BREAKPOINT_MEDIUM } from "../helper/HelperVariables";
 
 const HomeContainer = styled.div`
   display: grid;
@@ -15,11 +16,14 @@ const HomeContainer = styled.div`
 `;
 const Bilde = styled.img`
   object-fit: cover;
-  object-position: 0;
   width: 80%;
   margin: auto;
   height: 500px;
   margin-top: 80px;
+  @media (max-width: 768px) {
+    width: 90%;
+    height: auto;
+  }
 `;
 const LeftContainer = styled.div`
   margin-right: 10%;
@@ -29,6 +33,10 @@ const ImageRightContainer = styled.img`
   height: 300px;
   width: 100%;
   object-fit: cover;
+  @media (max-width: 768px) {
+    width: 90%;
+    object-fit: none;
+  }
 `;
 
 const Headline = styled.h1``;
@@ -37,8 +45,11 @@ const ContentContainer = styled.div`
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   padding-top: 50px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
 `;
 const Text = styled.p``;
 
@@ -61,7 +72,6 @@ export const AboutGustav = () => {
               viktige bidrag til arkitekturen i området.
             </Text>
           </LeftContainer>
-
           <ImageRightContainer src={Gustav} />
         </ContentContainer>
       </HomeContainer>
