@@ -17,6 +17,12 @@ const Content = styled.div`
   width: 80%;
   margin: auto;
 `;
+const Contacts = styled.p`
+  font-size: 20px;
+`;
+const Title = styled.h1`
+  font-size: 30px;
+`;
 
 const Menu = styled.img`
   border: 1px solid black;
@@ -29,9 +35,9 @@ export const OrderTable = () => {
   return (
     <Container>
       <Content>
-        <h1>Ønsker du å bestille bord hos Gustav's?</h1>
-        <p>Ring: {PHONE}</p>
-        <p>Email: {EMAIL}</p>
+        <Title>Ønsker du å bestille bord hos Gustav's?</Title>
+        <Contacts>Ring: {PHONE}</Contacts>
+        <Contacts>Email: {EMAIL}</Contacts>
         <h1>Menu</h1>
         <Menu src={menu1} />
         <Menu src={menu2} />
