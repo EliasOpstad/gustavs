@@ -45,7 +45,6 @@ const FooterCredits = styled.div`
   width: 100%;
   background-color: #303030;
 `;
-const Header = styled.h4``;
 
 const FB = styled.img`
   width: 50px;
@@ -88,7 +87,7 @@ const Footer = () => {
         </GustavInformation>
         <OpeningHours>
           <FooterTitle>ÅPNINGSTIDER:</FooterTitle>
-          {/* <Header>Restaurant</Header> */}
+
           <p>
             {OPENING_HOURS}
             <br />

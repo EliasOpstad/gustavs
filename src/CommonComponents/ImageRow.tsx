@@ -4,9 +4,10 @@ import blaa from "../Images/Blaaskjell.jpg";
 import GustavBilde from "../Images/Gustav-Helland.png";
 import bestillBord from "../Images/Bord-hoyre-close.jpg";
 import styled from "styled-components";
-import { PHONE, EMAIL, FOOTER_COLOR } from "../helper/HelperVariables";
+import { PHONE, EMAIL } from "../helper/HelperVariables";
 import { useNavigate } from "react-router-dom";
 import { PATH_ABOUTGUSTAV } from "../RouterFolder/Routes";
+import { Column } from "../styles/Style-helper";
 
 const Bilde = styled.img`
   width: 100%;
@@ -14,10 +15,7 @@ const Bilde = styled.img`
   object-fit: cover;
 `;
 
-const Element = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+const Element = styled(Column)``;
 
 const ImageGallary = styled.div`
   padding: 20px;
@@ -32,7 +30,9 @@ const ImageGallary = styled.div`
   }
 `;
 const Title = styled.h2``;
+
 const LinkText = styled.p`
+  margin: 0;
   color: #75ffb8;
   &:hover {
     cursor: pointer;
@@ -54,10 +54,8 @@ export const ImageRow = () => {
           <Bilde src={bestillBord} />
           <Title>Bestill Bord</Title>
           <Description>
-            <p>
-              Ring: {PHONE} <br />
-              Email: {EMAIL}
-            </p>
+            Ring: {PHONE} <br />
+            Email: {EMAIL}
           </Description>
         </Element>
         <Element>
