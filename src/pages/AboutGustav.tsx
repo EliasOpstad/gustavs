@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Gustav from "../Images/Gustav-Helland.png";
 import huset from "../Images/Huset.png";
-import Workers from "../CommonComponents/Workers";
 import { BLACK_COLOR, WHITE_COLOR } from "../helper/HelperVariables";
 
 const HomeContainer = styled.div`
@@ -20,7 +19,6 @@ const Bilde = styled.img`
   width: 80%;
   margin: auto;
   height: 500px;
-  margin-top: 80px;
   @media (max-width: 768px) {
     width: 90%;
     height: auto;

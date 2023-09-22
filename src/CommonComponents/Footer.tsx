@@ -4,6 +4,7 @@ import { Column, Row } from "../styles/Style-helper";
 import fb from "../Images/fb.svg";
 import {
   ADDRESS,
+  BREAKPOINT_MEDIUM,
   EMAIL,
   NAVN,
   OPENING_HOURS,
@@ -14,7 +15,7 @@ import {
 } from "../helper/HelperVariables";
 
 const Container = styled(Column)`
-  height: 500px;
+  height: 280px;
   justify-content: space-between;
   width: 100%;
   background-color: #b257ad58;
@@ -26,9 +27,10 @@ const TextContainer = styled(Row)`
   width: 80%;
   color: black;
   margin-left: 10%;
-  justify-content: flex-start;
-  gap: 100px;
-  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 20px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -37,9 +39,20 @@ const TextContainer = styled(Row)`
   }
 `;
 const GustavInformation = styled(Column)``;
-const FooterTitle = styled.h3``;
+const FooterTitle = styled.h3`
+  margin-bottom: 0px;
+`;
+const FooterText = styled.p`
+  margin-top: 5px;
+  line-height: 1.5;
+`;
 const OpeningHours = styled.div``;
-const FollowUs = styled.div``;
+const FollowUs = styled.div`
+  text-align: center;
+  @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
+    text-align: start;
+  }
+`;
 const FooterCredits = styled.div`
   height: 60px;
   width: 100%;
@@ -57,7 +70,6 @@ const CodeCreds = styled.div`
   color: white;
   margin-left: 10%;
   justify-content: flex-start;
-
   padding-top: 20px;
 `;
 const Info = styled.div`
@@ -66,52 +78,45 @@ const Info = styled.div`
     vertical-align: middle;
   }
 `;
-//   ∏ ∏  ∏ ∏
-// ∏ ¿ ¿ ¿ ¿ ∏
-// ∏  ? ? ?  ∏
-//   ∏ ∏ ∏ ∏
+
 const Footer = () => {
   return (
     <Container>
       <TextContainer>
         <GustavInformation>
-          <FooterTitle>GUSTAV'S</FooterTitle>
-          {ADDRESS}
-          <Kontakt>
-            <p>
-              E-post: {EMAIL} <br />
-              Telefon: {PHONE}
-            </p>
-          </Kontakt>
-          {/* <button>Bestill bord</button> */}
+          <FooterTitle>INFORMASJON:</FooterTitle>
+          <FooterText>
+            E-post: {EMAIL} <br />
+            Telefon: {PHONE}
+            <Kontakt>
+              <p>{ADDRESS}</p>
+            </Kontakt>
+          </FooterText>
         </GustavInformation>
-        <OpeningHours>
-          <FooterTitle>ÅPNINGSTIDER:</FooterTitle>
-
-          <p>
-            {OPENING_HOURS}
-            <br />
-            {OPENING_HOURS_KITCHEN}
-          </p>
-          <p>
-            {OPENING_HOURS_WEEKEND}
-            <br />
-            {OPENING_HOURS_KITCHEN_WEEKEND}
-          </p>
-        </OpeningHours>
         <FollowUs>
-          <FooterTitle>Følg oss på Sosiale Medier</FooterTitle>
-          <p> for nyheter!</p>
+          <FooterTitle>FØLG OSS PÅ SOSIALE MEDIER</FooterTitle>
+          <FooterText>for oppdaterte nyheter!</FooterText>
           <a href="https://www.facebook.com/profile.php?id=100095026144226">
             <FB src={fb}></FB>
           </a>
         </FollowUs>
+        <OpeningHours>
+          <FooterTitle>ÅPNINGSTIDER:</FooterTitle>
+
+          <FooterText>
+            {OPENING_HOURS}
+            <br />
+            {OPENING_HOURS_KITCHEN}
+            <br />
+            {OPENING_HOURS_WEEKEND}
+            <br />
+            {OPENING_HOURS_KITCHEN_WEEKEND}
+          </FooterText>
+        </OpeningHours>
       </TextContainer>
       <FooterCredits>
         <CodeCreds>
-          <Info>
-            <p>{NAVN} | Utviklet av Elias Opstad</p>
-          </Info>
+          <Info>{NAVN} | Utviklet av Elias Opstad</Info>
         </CodeCreds>
       </FooterCredits>
     </Container>

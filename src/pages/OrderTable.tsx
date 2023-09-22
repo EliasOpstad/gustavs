@@ -21,6 +21,21 @@ const Container = styled(Column)`
   color: ${WHITE_COLOR};
 `;
 
+const Contacts = styled.div`
+  display: grid;
+  width: 60%;
+  grid-template-columns: 1fr 1px 1fr;
+  margin: auto;
+  justify-content: space-between;
+  @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
+    width: 80%;
+  }
+`;
+const ContactsElements = styled.p``;
+const ManuContainer = styled.div`
+  margin-bottom: 30px;
+`;
+
 const Content = styled.div`
   width: 80%;
   margin: auto;
@@ -28,23 +43,18 @@ const Content = styled.div`
     width: 100%;
   }
 `;
-const Contacts = styled.p`
-  font-size: 20px;
-`;
 const Title = styled.h1`
-  padding-top: 40px;
   font-size: 30px;
 `;
 const MENY = styled.h1`
   font-size: 30px;
-  padding-top: 40px;
 `;
 
 const Menu = styled.img`
   border: 1px solid black;
   width: 80%;
   margin: auto;
-  margin-bottom: 50px;
+
   @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
     width: 95%;
   }
@@ -55,11 +65,17 @@ export const OrderTable = () => {
     <Container>
       <Content>
         <Title>Ønsker du å bestille bord hos Gustav's?</Title>
-        <Contacts>Ring: {PHONE}</Contacts>
-        <Contacts>Email: {EMAIL}</Contacts>
+        <Contacts>
+          <ContactsElements>Telefon: {PHONE}</ContactsElements>
+          <ContactsElements>|</ContactsElements>
+          <ContactsElements>Email: {EMAIL}</ContactsElements>
+        </Contacts>
+
         <MENY>MENY</MENY>
-        <Menu src={menu1} />
-        <Menu src={menu2} />
+        <ManuContainer>
+          <Menu src={menu1} />
+          <Menu src={menu2} />
+        </ManuContainer>
       </Content>
     </Container>
   );

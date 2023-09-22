@@ -5,11 +5,7 @@ import { PATH_HOME } from "../RouterFolder/Routes";
 import HamburgerMenu from "./Nav/HamburgerMenu";
 import logo from "../Images/gustav-logo-white.svg";
 import pinkHouse from "../Images/pink-house.svg";
-import {
-  BLACK_COLOR,
-  BREAKPOINT_MEDIUM,
-  BREAKPOINT_SMALL,
-} from "../helper/HelperVariables";
+import { BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../helper/HelperVariables";
 const HeaderContainer = styled.div`
   display: flex;
   height: 120px;
