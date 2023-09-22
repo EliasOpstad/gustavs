@@ -33,7 +33,7 @@ const Title = styled.h2``;
 
 const LinkText = styled.p`
   margin: 0;
-  color: #75ffb8;
+  color: #75c6ff;
   &:hover {
     cursor: pointer;
     color: #ff6ff8d2;
