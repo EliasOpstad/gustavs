@@ -70,7 +70,7 @@ export const ImageRow = () => {
         </Element>
         <Element>
           <Bilde src={skampi} />
-          <Title>Ferske ingredienser</Title>
+          <Title>Tapas</Title>
           <Description>
             Vi har et utvalg av ulik småretter som supplerer din planke.
           </Description>
@@ -79,7 +79,7 @@ export const ImageRow = () => {
           <Bilde src={GustavBilde} />
           <Title>Om Gustav</Title>
           <Description>
-            Hvem var Gustav Helland? <br />{" "}
+            Hvem var Gustav Helland?{" "}
             <LinkText onClick={() => navigate(PATH_ABOUTGUSTAV)}>
               {" "}
               Les mer her...

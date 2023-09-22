@@ -49,8 +49,9 @@ const HamburgerMenu: React.FC = () => {
   return (
     <RightHeader>
       <ButtonLink onClick={() => navigate(PATH_HOME)}>HJEM</ButtonLink>
-      <ButtonLink onClick={() => navigate(PATH_ORDERTABLE)}>
-        BESTILL BORD
+      <ButtonLink onClick={() => navigate(PATH_ORDERTABLE)}>MENY</ButtonLink>
+      <ButtonLink onClick={() => navigate(PATH_JOBBHOSOSS)}>
+        JobbHosOss
       </ButtonLink>
       <ButtonLink onClick={() => navigate(PATH_ABOUTGUSTAV)}>OM OSS</ButtonLink>
     </RightHeader>
