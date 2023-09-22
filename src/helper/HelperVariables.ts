@@ -1,4 +1,4 @@
-export const NAVN = "Gustav's Tapas og Vinbar";
+export const NAVN = "Gustav's Vinbar og Tapas";
 
 export const FB_LINK =
   "https://www.facebook.com/profile.php?id=100095026144226";
