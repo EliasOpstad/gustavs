@@ -3,11 +3,7 @@ import styled from "styled-components";
 import Gustav from "../Images/Gustav-Helland.png";
 import huset from "../Images/Huset.png";
 import Workers from "../CommonComponents/Workers";
-import {
-  BLACK_COLOR,
-  BREAKPOINT_MEDIUM,
-  WHITE_COLOR,
-} from "../helper/HelperVariables";
+import { BLACK_COLOR, WHITE_COLOR } from "../helper/HelperVariables";
 
 const HomeContainer = styled.div`
   display: grid;

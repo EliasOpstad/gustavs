@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { Column, Row } from "../styles/Style-helper";
-
+import fb from "../Images/fb.svg";
 import {
   ADDRESS,
   EMAIL,
+  NAVN,
   OPENING_HOURS,
   OPENING_HOURS_KITCHEN,
   OPENING_HOURS_KITCHEN_WEEKEND,
@@ -45,6 +46,10 @@ const FooterCredits = styled.div`
   background-color: #303030;
 `;
 const Header = styled.h4``;
+
+const FB = styled.img`
+  width: 50px;
+`;
 const Kontakt = styled.div`
   line-height: 1.5;
 `;
@@ -98,12 +103,15 @@ const Footer = () => {
         <FollowUs>
           <FooterTitle>Følg oss på Sosiale Medier</FooterTitle>
           <p> for nyheter!</p>
+          <a href="https://www.facebook.com/profile.php?id=100095026144226">
+            <FB src={fb}></FB>
+          </a>
         </FollowUs>
       </TextContainer>
       <FooterCredits>
         <CodeCreds>
           <Info>
-            <p>Gustavs Vinbar & Tapas | Utviklet av Elias Opstad</p>
+            <p>{NAVN} | Utviklet av Elias Opstad</p>
           </Info>
         </CodeCreds>
       </FooterCredits>
