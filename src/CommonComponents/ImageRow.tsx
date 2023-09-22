@@ -69,7 +69,7 @@ export const ImageRow = () => {
           <Bilde src={GustavBilde} />
           <Title>Om Gustav</Title>
           <Description>
-            Hvem var Gustav Helland? Hva var hans visjon? Les mer her...(LINK)
+            Hvem var Gustav Helland? <br /> Les mer her...(LINK)
           </Description>
         </Element>
       </ImageGallary>
