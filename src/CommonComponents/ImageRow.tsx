@@ -1,6 +1,6 @@
 import React from "react";
-import skampi from "../Images/Skampi.jpg";
-import blaa from "../Images/Blaaskjell.jpg";
+import tbc from "../Images/tapas-brett-close.jpeg";
+import blaa from "../Images/Blaaskjell2.jpg";
 import GustavBilde from "../Images/Gustav-Helland.png";
 import bestillBord from "../Images/Bord-hoyre-close.jpg";
 import styled from "styled-components";
@@ -67,7 +67,7 @@ export const ImageRow = () => {
           </Description>
         </Element>
         <Element>
-          <Bilde src={skampi} />
+          <Bilde src={tbc} />
           <Title>Tapas</Title>
           <Description>
             Vi har et utvalg av ulik småretter som supplerer din planke.
