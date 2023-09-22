@@ -75,7 +75,7 @@ const Footer = () => {
     <Container>
       <TextContainer>
         <GustavInformation>
-          <FooterTitle>GUSTAVS</FooterTitle>
+          <FooterTitle>GUSTAV'S</FooterTitle>
           {ADDRESS}
           <Kontakt>
             <p>

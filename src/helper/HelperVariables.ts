@@ -7,7 +7,7 @@ export const ADDRESS = "Eiganesveien 8, 4008 Stavanger";
 export const PHONE = "+47 92 94 40 22";
 export const EMAIL = "jarle@gustavs.no";
 
-// Åpningstider Gustavs
+// Åpningstider Gustav's
 
 // Åpningstider onsdag - lørdag
 export const OPENING_HOURS = "Onsdag - Lørdag: 17:00 - 00:00";

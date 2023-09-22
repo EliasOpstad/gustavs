@@ -61,7 +61,7 @@ export const AboutGustav = () => {
         <Bilde src={huset} />
         <ContentContainer>
           <LeftContainer>
-            <Headline>Gustavs Restaurant</Headline>
+            <Headline>Gustav's Restaurant</Headline>
             <Text>
               Gustav Helland 1879 til 1958 var en av Stavangers mest
               betydningsfulle arkitekter. Eiganesveien 8 med i den rosa

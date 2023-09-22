@@ -85,7 +85,7 @@ export const OrderDecider = () => {
           </NesteSide>
           <ContainerRow>
             <TextContainer>
-              <h1>Velkommen til online booking hos Gustavs</h1>
+              <h1>Velkommen til online booking hos Gustav's</h1>
               <p>ÅPNINGSTIDER </p>
               <p>MANDAG - LØRDAG 11.00 - 00.00</p>
               <p>(KJØKKENET STENGER 22.00)</p>
