@@ -4,7 +4,9 @@ import blaa from "../Images/Blaaskjell.jpg";
 import GustavBilde from "../Images/Gustav-Helland.png";
 import bestillBord from "../Images/Bord-hoyre-close.jpg";
 import styled from "styled-components";
-import { PHONE, EMAIL } from "../helper/HelperVariables";
+import { PHONE, EMAIL, FOOTER_COLOR } from "../helper/HelperVariables";
+import { useNavigate } from "react-router-dom";
+import { PATH_ABOUTGUSTAV } from "../RouterFolder/Routes";
 
 const Bilde = styled.img`
   width: 100%;
@@ -30,6 +32,13 @@ const ImageGallary = styled.div`
   }
 `;
 const Title = styled.h2``;
+const LinkText = styled.p`
+  color: #75ffb8;
+  &:hover {
+    cursor: pointer;
+    color: #ff6ff8d2;
+  }
+`;
 const Description = styled.p`
   margin: 0;
   margin-bottom: 20px;
@@ -37,6 +46,7 @@ const Description = styled.p`
 `;
 
 export const ImageRow = () => {
+  const navigate = useNavigate();
   return (
     <>
       <ImageGallary>
@@ -69,7 +79,11 @@ export const ImageRow = () => {
           <Bilde src={GustavBilde} />
           <Title>Om Gustav</Title>
           <Description>
-            Hvem var Gustav Helland? <br /> Les mer her...(LINK)
+            Hvem var Gustav Helland? <br />{" "}
+            <LinkText onClick={() => navigate(PATH_ABOUTGUSTAV)}>
+              {" "}
+              Les mer her...
+            </LinkText>
           </Description>
         </Element>
       </ImageGallary>

@@ -10,10 +10,10 @@ export const EMAIL = "jarle@gustavs.no";
 // Åpningstider Gustavs
 
 // Åpningstider onsdag - lørdag
-export const OPENING_HOURS = "Onsdag - Lørdag: 17:00 - 24:00";
+export const OPENING_HOURS = "Onsdag - Lørdag: 17:00 - 00:00";
 export const OPENING_HOURS_KITCHEN = "Kjøkkenet stenger 22:00";
 // Åpningstider søndag
-export const OPENING_HOURS_WEEKEND = "Søndag: 15-22";
+export const OPENING_HOURS_WEEKEND = "Søndag: 15:00-22:00";
 export const OPENING_HOURS_KITCHEN_WEEKEND = "Kjøkkenet stenger 21:00";
 // Baren stenger
 export const OPENING_HOURS_BAR = "Baren stenger 22:00";
