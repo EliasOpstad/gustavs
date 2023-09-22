@@ -1,5 +1,5 @@
 // HamburgerMenu.tsx
-import React, { useState } from "react";
+import React from "react";
 
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
@@ -7,6 +7,7 @@ import {
   PATH_HOME,
   PATH_ORDERTABLE,
   PATH_ABOUTGUSTAV,
+  PATH_JOBBHOSOSS,
 } from "../../RouterFolder/Routes";
 import {
   BREAKPOINT_MEDIUM,
@@ -50,10 +51,10 @@ const HamburgerMenu: React.FC = () => {
     <RightHeader>
       <ButtonLink onClick={() => navigate(PATH_HOME)}>HJEM</ButtonLink>
       <ButtonLink onClick={() => navigate(PATH_ORDERTABLE)}>MENY</ButtonLink>
-      <ButtonLink onClick={() => navigate(PATH_JOBBHOSOSS)}>
-        JobbHosOss
-      </ButtonLink>
       <ButtonLink onClick={() => navigate(PATH_ABOUTGUSTAV)}>OM OSS</ButtonLink>
+      <ButtonLink onClick={() => navigate(PATH_JOBBHOSOSS)}>
+        LEDIGE STILLINGER
+      </ButtonLink>
     </RightHeader>
   );
 };
