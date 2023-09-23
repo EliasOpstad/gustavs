@@ -1,22 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-import soknad from "../Images/soknad.png";
+import image from "../Images/soknad.png";
+import Soknad from "../CommonComponents/Soknad";
 
 const Container = styled.div`
-  width: 90%;
+  width: 100%;
   margin: auto;
-`;
-const Soknad = styled.img`
-  display: flex;
-  width: 50%;
-  margin: auto;
+  background-color: #1b1b1b;
 `;
 
 const JobbHosOss = () => {
   return (
     <Container>
-      <Soknad src={soknad} />
+      <Soknad />
     </Container>
   );
 };

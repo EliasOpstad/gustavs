@@ -1,4 +1,5 @@
 export const NAVN = "Gustav's Vinbar & Tapas";
+export const NAVN_CAPS = "GUSTAV'S VINBAR & TAPAS";
 
 export const FB_LINK =
   "https://www.facebook.com/profile.php?id=100095026144226";
@@ -46,6 +47,6 @@ export const FONT_SIZE_XXXLARGE = "5rem";
 
 //Breakpoints
 export const BREAKPOINT_SMALL = "540px";
-export const BREAKPOINT_MEDIUM = "775px";
+export const BREAKPOINT_MEDIUM = "900px";
 export const BREAKPOINT_LARGE = "1200px";
 export const BREAKPOINT_XLARGE = "1800px";

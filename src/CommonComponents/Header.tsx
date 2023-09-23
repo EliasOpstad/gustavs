@@ -15,7 +15,7 @@ const HeaderContainer = styled.div`
 
 const PinkHouse = styled.img`
   display: none;
-  @media (max-width: ${BREAKPOINT_SMALL}) {
+  @media (max-width: ${BREAKPOINT_MEDIUM}) {
     display: flex;
     margin-left: 10%;
     align-items: center;
@@ -30,9 +30,6 @@ const Logo = styled.img`
   height: 90px;
   width: auto;
   @media (max-width: ${BREAKPOINT_MEDIUM}) {
-    height: 60px;
-  }
-  @media (max-width: ${BREAKPOINT_SMALL}) {
     display: none;
   }
 `;
