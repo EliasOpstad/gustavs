@@ -2,7 +2,7 @@ import React from "react";
 import tbc from "../Images/tapas-brett-close.jpeg";
 import blaa from "../Images/Blaaskjell2.jpg";
 import GustavBilde from "../Images/Gustav-Helland.png";
-import bestillBord from "../Images/Bord-hoyre-close.jpg";
+import bestillBord from "../Images/jarle.jpg";
 import styled from "styled-components";
 import { PHONE, EMAIL } from "../helper/HelperVariables";
 import { useNavigate } from "react-router-dom";
@@ -59,18 +59,18 @@ export const ImageRow = () => {
           </Description>
         </Element>
         <Element>
+          <Bilde src={tbc} />
+          <Title>Tapas</Title>
+          <Description>
+            Vi har et utvalg av ulik småretter som supplerer din planke.
+          </Description>
+        </Element>
+        <Element>
           <Bilde src={blaa} />
           <Title>Råvarer av høy kvalitet</Title>
           <Description>
             Vi bruker lokale leverandører og kortreiste produkter når det er
             mulig.
-          </Description>
-        </Element>
-        <Element>
-          <Bilde src={tbc} />
-          <Title>Tapas</Title>
-          <Description>
-            Vi har et utvalg av ulik småretter som supplerer din planke.
           </Description>
         </Element>
         <Element>
