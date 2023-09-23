@@ -42,7 +42,7 @@ const Soknad = () => {
         Vi søker et utadvendt og sprudlende menneske som har en genuin interesse
         for å sette gjestene i sentrum. Vi er et folkelig sted, med hyggelig og
         god atmosfære, som skal være et typsik nabolagssted. Her skal man kunne
-        nyte et godt glass vin, litt taps eller en helaften.{" "}
+        nyte et godt glass vin, litt tapas eller en helaften.{" "}
       </p>
 
       <p>
