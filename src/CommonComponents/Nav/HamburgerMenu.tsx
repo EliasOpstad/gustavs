@@ -53,7 +53,7 @@ const HamburgerMenu: React.FC = () => {
       <ButtonLink onClick={() => navigate(PATH_ORDERTABLE)}>MENY</ButtonLink>
       <ButtonLink onClick={() => navigate(PATH_ABOUTGUSTAV)}>OM OSS</ButtonLink>
       <ButtonLink onClick={() => navigate(PATH_JOBBHOSOSS)}>
-        LEDIGE STILLINGER
+        LEDIG STILLING
       </ButtonLink>
     </RightHeader>
   );
