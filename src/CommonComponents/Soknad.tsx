@@ -60,7 +60,7 @@ const Soknad = () => {
       </p>
 
       <p>
-        Send din CV og søknad til "post@isyliving.no eller kontakt daglig leder
+        Send din CV og søknad til "jarle@gustavs.no eller kontakt daglig leder
         Jarle Johansen på 951 79 567
       </p>
     </Container>
