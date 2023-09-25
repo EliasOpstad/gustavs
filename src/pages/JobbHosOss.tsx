@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import image from "../Images/soknad.png";
 import Soknad from "../CommonComponents/Soknad";
 
 const Container = styled.div`
