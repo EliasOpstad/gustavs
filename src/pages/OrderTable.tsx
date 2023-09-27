@@ -22,16 +22,30 @@ const Container = styled(Column)`
 `;
 
 const Contacts = styled.div`
-  display: grid;
-  width: 60%;
-  grid-template-columns: 1fr 1px 1fr;
-  margin: auto;
-  justify-content: space-between;
-  @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
-    width: 80%;
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (width <504px) {
+    flex-direction: column;
   }
 `;
-const ContactsElements = styled.p``;
+
+const ContactsElements = styled.div`
+  font-size: 15px;
+  align-items: center;
+
+  gap: 10px;
+`;
+const Bar = styled.p`
+  align-items: center;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+`;
 const ManuContainer = styled.div`
   margin-bottom: 30px;
 `;
@@ -43,8 +57,14 @@ const Content = styled.div`
     width: 100%;
   }
 `;
-const Title = styled.h1`
+
+const Title = styled.div`
   font-size: 30px;
+  @media screen and (max-width: 500px) {
+    width: 90%;
+    font-size: 25px;
+    margin: auto;
+  }
 `;
 const MENY = styled.h1`
   font-size: 30px;
@@ -67,8 +87,8 @@ export const OrderTable = () => {
         <Title>Ønsker du å bestille bord hos Gustav's?</Title>
         <Contacts>
           <ContactsElements>Telefon: {PHONE}</ContactsElements>
-          <ContactsElements>|</ContactsElements>
-          <ContactsElements>Email: {EMAIL}</ContactsElements>
+          <Bar>|</Bar>
+          <ContactsElements>E-mail: {EMAIL}</ContactsElements>
         </Contacts>
 
         <MENY>MENY</MENY>

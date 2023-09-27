@@ -22,6 +22,9 @@ const PinkHouse = styled.img`
     height: 34px;
     width: auto;
   }
+  @media screen and (max-width: 420px) {
+    display: none;
+  }
 `;
 const Logo = styled.img`
   display: flex;

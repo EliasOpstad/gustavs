@@ -19,6 +19,12 @@ const ButtonLink = styled.div`
   color: white;
   @media (max-width: ${BREAKPOINT_SMALL}) {
     font-size: 14px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+  @media (max-width: 330px) {
+    font-size: 12px;
   }
 `;
 const RightHeader = styled.div`
@@ -28,6 +34,7 @@ const RightHeader = styled.div`
     margin: auto;
     gap: 60px;
     margin-right: 10%;
+    text-align: center;
   }
   display: flex;
   gap: 20px;
@@ -42,6 +49,10 @@ const RightHeader = styled.div`
     justify-content: space-around;
     margin: auto;
     padding: 10px;
+    align-items: center;
+  }
+  @media (max-width: 330px) {
+    padding: 5px;
   }
 `;
 
