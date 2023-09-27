@@ -27,7 +27,7 @@ const Soknad = () => {
       <h1> {NAVN_CAPS} SØKER SERVITØR MED KOMPETANSE OM VIN</h1>
       <p></p>
       <p>
-        Gustav´s er en nyoppstartet taps og vinbar i Stavanger, som holder til
+        Gustav´s er en nyoppstartet tapas og vinbar i Stavanger, som holder til
         på Eiganes i de gamle lokalene til Cafe d France. Stedet er intimt og
         koselig med 40 sitteplasser.
       </p>
