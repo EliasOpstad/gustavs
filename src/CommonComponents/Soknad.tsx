@@ -34,8 +34,7 @@ const Soknad = () => {
 
       <p>
         Vi serverer tradisjonell tapas med blåskjell, skiner, oster, m.m, samt
-        andre tapasinspirerte retter. I sesongen vil vi også ha Lutefisk på
-        menyen. Målet vårt er å servere byens beste Lutefisk!
+        andre tapasinspirerte retter.
       </p>
 
       <p>
