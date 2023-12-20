@@ -55,7 +55,7 @@ export const ImageRow = () => {
           <Title>Bestill Bord</Title>
           <Description>
             Ring: {PHONE} <br />
-            Email: {EMAIL}
+            Email: {EMAIL} <br/>
             Gustav's tar juleferie fra 19 des til 4 januar. <br/> God Jul!
           </Description>
         </Element>
