@@ -48,7 +48,7 @@ const FooterText = styled.p`
   line-height: 1.5;
 
   a {
-    color: #75c6ff;
+    color: #571553;
     text-decoration: none;
     &:hover {
       color: #b257ad;
