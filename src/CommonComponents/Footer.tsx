@@ -9,8 +9,8 @@ import {
   NAVN,
   OPENING_HOURS,
   OPENING_HOURS_KITCHEN,
-  OPENING_HOURS_KITCHEN_WEEKEND,
-  OPENING_HOURS_WEEKEND,
+  // OPENING_HOURS_KITCHEN_WEEKEND,
+  // OPENING_HOURS_WEEKEND,
   PHONE,
 } from "../helper/HelperVariables";
 
@@ -108,9 +108,6 @@ const Footer = () => {
             <br />
             {OPENING_HOURS_KITCHEN}
             <br />
-            {OPENING_HOURS_WEEKEND}
-            <br />
-            {OPENING_HOURS_KITCHEN_WEEKEND}
           </FooterText>
         </OpeningHours>
       </TextContainer>

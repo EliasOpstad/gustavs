@@ -85,7 +85,7 @@ export const OrderTable = () => {
     <Container>
       <Content>
         <Title>Ønsker du å bestille bord hos Gustav's?</Title>
-        <h2>Gustav's tar juleferie fra 19 des til 4 januar. God Jul!</h2>
+        {/* <h2>Gustav's tar juleferie fra 19 des til 4 januar. God Jul!</h2> */}
         <Contacts>
           <ContactsElements>Telefon: {PHONE}</ContactsElements>
           <Bar>|</Bar>
