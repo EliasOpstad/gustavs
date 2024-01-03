@@ -75,9 +75,9 @@ const HomePage = () => {
             <h1>{NAVN}</h1>
           </Headline>
           <PContainer>
-            Del et måltid med dine gode venner. Gustav's anbefaler Planke med
-            nydelige skinker og oster. Sammen med noe godt i glasset blir dette
-            en hyggelig opplevelse
+            Del et måltid med dine gode venner. Gustav's anbefaler planke med
+            nydelige skinker og oster. Sammen med noe godt i glasset, blir dette
+            en hyggelig opplevelse.
           </PContainer>
         </TextContainer>
         <Line />

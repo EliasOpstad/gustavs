@@ -26,6 +26,9 @@ const ButtonLink = styled.div`
   @media (max-width: 330px) {
     font-size: 12px;
   }
+  &:hover {
+    color: #b257ad;
+  }
 `;
 const RightHeader = styled.div`
   @media (min-width: ${BREAKPOINT_MEDIUM}) {

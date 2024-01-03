@@ -43,6 +43,13 @@ const Description = styled.p`
   margin: 0;
   margin-bottom: 20px;
   line-height: 1.6;
+  a {
+    color: #75c6ff;
+    text-decoration: none;
+    &:hover {
+      color: #b257ad;
+    }
+  }
 `;
 
 export const ImageRow = () => {
@@ -54,8 +61,8 @@ export const ImageRow = () => {
           <Bilde src={bestillBord} />
           <Title>Bestill Bord</Title>
           <Description>
-            Ring: {PHONE} <br />
-            Email: {EMAIL} <br />
+            Ring: <a href="tel:92944022">+47 92 94 40 22</a> <br />
+            Email: <a href="mailto:jarle@gustavs.no">jarle@gustavs.no</a> <br />
             {/* Gustav's tar juleferie fra 19 des til 4 januar. <br/> God Jul! */}
           </Description>
         </Element>

@@ -45,7 +45,16 @@ const FooterTitle = styled.h3`
 const FooterText = styled.p`
   margin-top: 5px;
   line-height: 1.5;
+
+  a {
+    color: #364a84;
+    text-decoration: none;
+    &:hover {
+      color: #b257ad;
+    }
+  }
 `;
+
 const OpeningHours = styled.div``;
 const FollowUs = styled.div`
   text-align: center;
@@ -86,8 +95,9 @@ const Footer = () => {
         <GustavInformation>
           <FooterTitle>INFORMASJON:</FooterTitle>
           <FooterText>
-            E-post: {EMAIL} <br />
-            Telefon: {PHONE}
+            Telefon: <a href="tel:92944022">+47 92 94 40 22</a>
+            <br />
+            E-post: <a href="mailto:jarle@gustavs.no">jarle@gustavs.no</a>
             <Kontakt>
               <p>{ADDRESS}</p>
             </Kontakt>
