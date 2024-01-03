@@ -112,7 +112,7 @@ export const OrderTable = () => {
             </a>
           </ROW>
           <ROW>
-            <ContactsElements>E-mail: {EMAIL}</ContactsElements>
+            <ContactsElements>E-post: {EMAIL}</ContactsElements>
             <a href="mailto:jarle@gustavs.no">
               <EMAIL_DIV src={EMAIL_ICON} alt="Email: jarle@gustavs.no" />
             </a>

@@ -47,7 +47,7 @@ const FooterText = styled.p`
   line-height: 1.5;
 
   a {
-    color: #364a84;
+    color: #75c6ff;
     text-decoration: none;
     &:hover {
       color: #b257ad;
@@ -60,6 +60,13 @@ const FollowUs = styled.div`
   text-align: center;
   @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
     text-align: start;
+  }
+  a {
+    color: #75c6ff;
+    text-decoration: none;
+    &:hover {
+      color: #b257ad;
+    }
   }
 `;
 const FooterCredits = styled.div`
