@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import menu1 from "../Images/Meny-1.png";
 import menu2 from "../Images/Meny-2.png";
-import { Column } from "../styles/Style-helper";
+import { Column, Row } from "../styles/Style-helper";
+import PHONE_ICON from "../Images/phone.png";
+import EMAIL_ICON from "../Images/email.png";
+
 import {
   BLACK_COLOR,
   BREAKPOINT_MEDIUM,
@@ -21,7 +24,7 @@ const Container = styled(Column)`
   color: ${WHITE_COLOR};
 `;
 
-const Contacts = styled.div`
+const Contacts = styled(Column)`
   margin-top: 40px;
   display: flex;
   gap: 20px;
@@ -40,12 +43,12 @@ const ContactsElements = styled.div`
 
   gap: 10px;
 `;
-const Bar = styled.p`
-  align-items: center;
-  @media screen and (max-width: 500px) {
-    display: none;
-  }
-`;
+// const Bar = styled.p`
+//   align-items: center;
+//   @media screen and (max-width: 500px) {
+//     display: none;
+//   }
+// `;
 const ManuContainer = styled.div`
   margin-bottom: 30px;
 `;
@@ -70,6 +73,21 @@ const MENY = styled.h1`
   font-size: 30px;
 `;
 
+const PHONE_DIV = styled.img`
+  width: 40px;
+  height: auto;
+`;
+const EMAIL_DIV = styled.img`
+  width: 40px;
+  height: auto;
+`;
+
+const ROW = styled(Row)`
+  display: flex;
+  gap: 20px;
+  align-items: center;
+`;
+
 const Menu = styled.img`
   border: 1px solid black;
   width: 80%;
@@ -87,9 +105,18 @@ export const OrderTable = () => {
         <Title>Ønsker du å bestille bord hos Gustav's?</Title>
         {/* <h2>Gustav's tar juleferie fra 19 des til 4 januar. God Jul!</h2> */}
         <Contacts>
-          <ContactsElements>Telefon: {PHONE}</ContactsElements>
-          <Bar>|</Bar>
-          <ContactsElements>E-mail: {EMAIL}</ContactsElements>
+          <ROW>
+            <ContactsElements>Telefon: {PHONE}</ContactsElements>
+            <a href="tel:92944022">
+              <PHONE_DIV src={PHONE_ICON} alt="Ring 92944022" />
+            </a>
+          </ROW>
+          <ROW>
+            <ContactsElements>E-mail: {EMAIL}</ContactsElements>
+            <a href="mailto:jarle@gustavs.no">
+              <EMAIL_DIV src={EMAIL_ICON} alt="Email: jarle@gustavs.no" />
+            </a>
+          </ROW>
         </Contacts>
 
         <MENY>MENY</MENY>

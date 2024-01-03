@@ -11,7 +11,6 @@ const HomeContainer = styled.div`
   color: white; */
   background-color: ${BLACK_COLOR};
   color: ${WHITE_COLOR};
-
   padding-bottom: 100px;
 `;
 const Bilde = styled.img`
