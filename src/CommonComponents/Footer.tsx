@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Column, Row } from "../styles/Style-helper";
 import fb from "../Images/fb.svg";
+import insta from "../Images/instagram.png";
 import {
   ADDRESS,
   BREAKPOINT_MEDIUM,
@@ -78,6 +79,17 @@ const FooterCredits = styled.div`
 const FB = styled.img`
   width: 50px;
 `;
+
+const Instagram = styled.img`
+  width: 50px;
+`;
+
+const ICONS = styled.div`
+  a {
+    margin-right: 10px;
+  }
+`;
+
 const Kontakt = styled.div`
   line-height: 1.5;
 `;
@@ -96,6 +108,8 @@ const Info = styled.div`
 `;
 
 const Footer = () => {
+  const instagramUsername = "Gustavsvinbar";
+
   return (
     <Container>
       <TextContainer>
@@ -113,9 +127,18 @@ const Footer = () => {
         <FollowUs>
           <FooterTitle>FØLG OSS PÅ SOSIALE MEDIER</FooterTitle>
           <FooterText>for oppdaterte nyheter!</FooterText>
-          <a href="https://www.facebook.com/profile.php?id=100095026144226">
-            <FB src={fb}></FB>
-          </a>
+          <ICONS>
+            <a href="https://www.facebook.com/profile.php?id=100095026144226">
+              <FB src={fb}></FB>
+            </a>
+            <a
+              href={`https://www.instagram.com/${instagramUsername}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram src={insta}></Instagram>
+            </a>
+          </ICONS>
         </FollowUs>
         <OpeningHours>
           <FooterTitle>ÅPNINGSTIDER:</FooterTitle>
