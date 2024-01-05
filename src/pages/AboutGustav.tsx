@@ -62,12 +62,12 @@ export const AboutGustav = () => {
             <Text>
               Gustav Helland 1879 til 1958 var en av Stavangers mest
               betydningsfulle arkitekter. Eiganesveien 8, i den rosa
-              murbygningen, var hans hans hjem. Du sitter midt i hans arbeidsrom
-              når du besøker oss. Han tegnet dette bygget til seg og sin
-              familie. Gustav Helland tegnet mange betydningsfulle bygninger,
-              deriblant Sola kirke, Lysebotn kraftverk, Stavanger døvekirke,
-              Stavanger og Rogalands bank m.m. Han hadde en stor produksjon og
-              viktige bidrag til arkitekturen i området.
+              murbygningen, var hans hjem. Du sitter midt i hans arbeidsrom når
+              du besøker oss. Han tegnet dette bygget til seg og sin familie.
+              Gustav Helland tegnet mange betydningsfulle bygninger, deriblant
+              Sola kirke, Lysebotn kraftverk, Stavanger døvekirke, Stavanger og
+              Rogalands bank m.m. Han hadde en stor produksjon og viktige bidrag
+              til arkitekturen i området.
             </Text>
           </LeftContainer>
           <ImageRightContainer src={Gustav} />
