@@ -54,8 +54,7 @@ const Soknad = () => {
       </p>
 
       <p>
-        Søknadsfrist: Vi behandler alle søknader fortløpende. Siste frist er
-        10.10. 2023. Lønn etter avtale.{" "}
+        Søknadsfrist: Vi behandler alle søknader fortløpende. Lønn etter avtale.{" "}
       </p>
 
       <p>
