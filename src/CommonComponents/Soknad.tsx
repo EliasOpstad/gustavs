@@ -27,7 +27,7 @@ const Soknad = () => {
       <h1> {NAVN_CAPS} SØKER SERVITØR MED KOMPETANSE OM VIN</h1>
       <p></p>
       <p>
-        Gustav´s er en nyoppstartet tapas og vinbar i Stavanger, som holder til
+        Gustav's er en nyoppstartet tapas og vinbar i Stavanger, som holder til
         på Eiganes i de gamle lokalene til Cafe d France. Stedet er intimt og
         koselig med 40 sitteplasser.
       </p>
@@ -41,16 +41,16 @@ const Soknad = () => {
         Vi søker et utadvendt og sprudlende menneske som har en genuin interesse
         for å sette gjestene i sentrum. Vi er et folkelig sted, med hyggelig og
         god atmosfære, som skal være et typsik nabolagssted. Her skal man kunne
-        nyte et godt glass vin, litt tapas eller en helaften.{" "}
+        nyte et godt glass vin, litt tapas eller en helaften.
       </p>
 
       <p>
         Vi søker medarbeidere som har erfaring som: servitør/ vinkelner/
-        sommelier
+        sommelier.
       </p>
       <p>
-        Arbeidstid er primært helg - fredag og lørdag kveld, og dagtid
-        søndag.Noe ekstra i ukedager må påbegrenes, særlig i sesongen
+        Arbeidstid er primært helg - fredag og lørdag kveld. Noe ekstra i
+        ukedager må påbegrenes, særlig i sesongen.
       </p>
 
       <p>
@@ -58,8 +58,8 @@ const Soknad = () => {
       </p>
 
       <p>
-        Send din CV og søknad til "jarle@gustavs.no eller kontakt daglig leder
-        Jarle Johansen på 951 79 567
+        Send din CV og søknad til "jarle@gustavs.no" eller kontakt daglig leder
+        Jarle Johansen på 951 79 567.
       </p>
     </Container>
   );
