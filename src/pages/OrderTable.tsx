@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import menu1 from "../Images/Meny-1.png";
-import menu2 from "../Images/Meny-2.png";
+import menu1 from "../Images/NEW_MENY1.png";
+import menu2 from "../Images/NEW_MENY2.png";
 import { Column, Row } from "../styles/Style-helper";
 import PHONE_ICON from "../Images/phone.png";
 import EMAIL_ICON from "../Images/email.png";
@@ -9,7 +9,7 @@ import EMAIL_ICON from "../Images/email.png";
 import {
   BLACK_COLOR,
   BREAKPOINT_MEDIUM,
-  EMAIL,
+  EMAIL_BOOKING,
   PHONE,
   WHITE_COLOR,
 } from "../helper/HelperVariables";
@@ -112,9 +112,9 @@ export const OrderTable = () => {
             </a>
           </ROW>
           <ROW>
-            <ContactsElements>E-post: {EMAIL}</ContactsElements>
-            <a href="mailto:jarle@gustavs.no">
-              <EMAIL_DIV src={EMAIL_ICON} alt="Email: jarle@gustavs.no" />
+            <ContactsElements>E-post: {EMAIL_BOOKING}</ContactsElements>
+            <a href="mailto:booking@gustavs.no">
+              <EMAIL_DIV src={EMAIL_ICON} alt="Email: booking@gustavs.no" />
             </a>
           </ROW>
         </Contacts>

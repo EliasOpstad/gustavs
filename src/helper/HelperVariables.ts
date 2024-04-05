@@ -6,6 +6,7 @@ export const FB_LINK =
 
 export const ADDRESS = "Eiganesveien 8, 4008 Stavanger";
 export const PHONE = "+47 92 94 40 22";
+export const EMAIL_BOOKING = "booking@gustavs.no";
 export const EMAIL = "jarle@gustavs.no";
 
 // Åpningstider Gustav's

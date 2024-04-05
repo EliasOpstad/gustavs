@@ -116,9 +116,9 @@ const Footer = () => {
         <GustavInformation>
           <FooterTitle>INFORMASJON:</FooterTitle>
           <FooterText>
-            Telefon: <a href="tel:92944022">+47 92 94 40 22</a>
+            Telefon: <a href="tel:92944022">{PHONE}</a>
             <br />
-            E-post: <a href="mailto:jarle@gustavs.no">jarle@gustavs.no</a>
+            E-post: <a href="mailto:jarle@gustavs.no">{EMAIL}</a>
             <Kontakt>
               <p>{ADDRESS}</p>
             </Kontakt>

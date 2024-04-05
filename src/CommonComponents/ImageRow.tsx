@@ -4,7 +4,7 @@ import blaa from "../Images/Blaaskjell2.jpg";
 import GustavBilde from "../Images/Gustav-Helland.png";
 import bestillBord from "../Images/jarle.jpg";
 import styled from "styled-components";
-import { PHONE, EMAIL } from "../helper/HelperVariables";
+import { PHONE, EMAIL_BOOKING } from "../helper/HelperVariables";
 import { useNavigate } from "react-router-dom";
 import { PATH_ABOUTGUSTAV } from "../RouterFolder/Routes";
 import { Column } from "../styles/Style-helper";
@@ -61,8 +61,9 @@ export const ImageRow = () => {
           <Bilde src={bestillBord} />
           <Title>Bestill Bord</Title>
           <Description>
-            Ring: <a href="tel:92944022">+47 92 94 40 22</a> <br />
-            Email: <a href="mailto:jarle@gustavs.no">jarle@gustavs.no</a> <br />
+            Ring: <a href="tel:92944022">{PHONE}</a> <br />
+            Email: <a href="mailto:booking@gustavs.no">{EMAIL_BOOKING}</a>{" "}
+            <br />
             {/* Gustav's tar juleferie fra 19 des til 4 januar. <br/> God Jul! */}
           </Description>
         </Element>
