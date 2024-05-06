@@ -16,6 +16,12 @@ import {
 } from "../helper/HelperVariables";
 
 const Container = styled(Column)`
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 75px;
+
   height: 280px;
   justify-content: space-between;
   width: 100%;

@@ -64,7 +64,9 @@ const HamburgerMenu: React.FC = () => {
   return (
     <RightHeader>
       <ButtonLink onClick={() => navigate(PATH_HOME)}>HJEM</ButtonLink>
-      <ButtonLink onClick={() => navigate(PATH_ORDERTABLE)}>MENY</ButtonLink>
+      <ButtonLink onClick={() => navigate(PATH_ORDERTABLE)}>
+        BOOK BORD
+      </ButtonLink>
       <ButtonLink onClick={() => navigate(PATH_ABOUTGUSTAV)}>OM OSS</ButtonLink>
       <ButtonLink onClick={() => navigate(PATH_JOBBHOSOSS)}>
         LEDIG STILLING

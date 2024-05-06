@@ -5,11 +5,13 @@ import menu2 from "../Images/NEW_MENY2.png";
 import { Column, Row } from "../styles/Style-helper";
 import PHONE_ICON from "../Images/phone.png";
 import EMAIL_ICON from "../Images/email.png";
+import { BookingButton } from "../CommonComponents/BookingButton";
 
 import {
   BLACK_COLOR,
   BREAKPOINT_MEDIUM,
   EMAIL_BOOKING,
+  FOOTER_COLOR,
   PHONE,
   WHITE_COLOR,
 } from "../helper/HelperVariables";
@@ -40,7 +42,6 @@ const Contacts = styled(Column)`
 const ContactsElements = styled.div`
   font-size: 15px;
   align-items: center;
-
   gap: 10px;
 `;
 // const Bar = styled.p`
@@ -49,7 +50,7 @@ const ContactsElements = styled.div`
 //     display: none;
 //   }
 // `;
-const ManuContainer = styled.div`
+const MenuContainer = styled.div`
   margin-bottom: 30px;
 `;
 
@@ -105,6 +106,7 @@ export const OrderTable = () => {
         <Title>Ønsker du å bestille bord hos Gustav's?</Title>
         {/* <h2>Gustav's tar juleferie fra 19 des til 4 januar. God Jul!</h2> */}
         <Contacts>
+          <BookingButton />
           <ROW>
             <ContactsElements>Telefon: {PHONE}</ContactsElements>
             <a href="tel:92944022">
@@ -120,10 +122,10 @@ export const OrderTable = () => {
         </Contacts>
 
         <MENY>MENY</MENY>
-        <ManuContainer>
+        <MenuContainer>
           <Menu src={menu1} />
           <Menu src={menu2} />
-        </ManuContainer>
+        </MenuContainer>
       </Content>
     </Container>
   );

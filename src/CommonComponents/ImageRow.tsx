@@ -8,6 +8,7 @@ import { PHONE, EMAIL_BOOKING } from "../helper/HelperVariables";
 import { useNavigate } from "react-router-dom";
 import { PATH_ABOUTGUSTAV } from "../RouterFolder/Routes";
 import { Column } from "../styles/Style-helper";
+import { BookingButton } from "./BookingButton";
 
 const Bilde = styled.img`
   width: 100%;
@@ -39,6 +40,14 @@ const LinkText = styled.p`
     color: #ff6ff8d2;
   }
 `;
+
+const FlexDiv = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
 const Description = styled.p`
   margin: 0;
   margin-bottom: 20px;
@@ -60,12 +69,16 @@ export const ImageRow = () => {
         <Element>
           <Bilde src={bestillBord} />
           <Title>Bestill Bord</Title>
-          <Description>
-            Ring: <a href="tel:92944022">{PHONE}</a> <br />
-            Email: <a href="mailto:booking@gustavs.no">{EMAIL_BOOKING}</a>{" "}
-            <br />
-            {/* Gustav's tar juleferie fra 19 des til 4 januar. <br/> God Jul! */}
-          </Description>
+          <FlexDiv>
+            <Description>
+              Ring: <a href="tel:92944022">{PHONE}</a> <br />
+              Email: <a href="mailto:booking@gustavs.no">
+                {EMAIL_BOOKING}
+              </a>{" "}
+              {/* Gustav's tar juleferie fra 19 des til 4 januar. <br /> God Jul! */}
+            </Description>
+            <BookingButton />
+          </FlexDiv>
         </Element>
         <Element>
           <Bilde src={tbc} />
